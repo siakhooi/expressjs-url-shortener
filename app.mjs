@@ -9,10 +9,6 @@ const port = 8080;
 app.locals.Storage = new Storage();
 app.locals.Storage.init();
 
-// if (Storage.data.links === undefined) {
-//   Storage.data.links = [];
-//   Storage.write();
-// }
 app.use(express.json());
 app.post('/cut', cutURL);
 

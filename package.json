@@ -1,7 +1,7 @@
 {
   "name": "expressjs-url-shortener",
   "description": "URL shortener API using ExpressJS",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "start": "node ./app.mjs",
@@ -14,8 +14,7 @@
     "url": "git+https://github.com/siakhooi/expressjs-url-shortener.git"
   },
   "keywords": [
-    "url",
-    "shortener",
+    "url shortener",
     "api"
   ],
   "author": "Siak Hooi Ng",
@@ -37,7 +36,7 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.[m]*js?$": "babel-jest"
+      "\\.(mjs|js)$": "babel-jest"
     },
     "moduleFileExtensions": [
       "js",
