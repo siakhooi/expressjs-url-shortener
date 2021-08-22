@@ -1,15 +1,17 @@
 {
-  "name": "expressjs-url-shortener-api",
+  "name": "expressjs-url-shortener",
   "description": "URL shortener API using ExpressJS",
   "version": "1.0.0",
   "type": "module",
-  "main": "app.js",
   "scripts": {
-    "serve": "node app.js"
+    "start": "node ./app.mjs",
+    "test": "jest --coverage --verbose",
+    "eslint": "npx eslint --format table .",
+    "test-single": "jest --collectCoverage=false -t 'Storage/init/*'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siakhooi/expressjs-url-shortener-api.git"
+    "url": "git+https://github.com/siakhooi/expressjs-url-shortener.git"
   },
   "keywords": [
     "url",
@@ -19,16 +21,35 @@
   "author": "Siak Hooi Ng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/siakhooi/expressjs-url-shortener-api/issues"
+    "url": "https://github.com/siakhooi/expressjs-url-shortener/issues"
   },
-  "homepage": "https://github.com/siakhooi/expressjs-url-shortener-api#readme",
+  "homepage": "https://github.com/siakhooi/expressjs-url-shortener#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.1",
     "jest": "^27.0.6"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[m]*js?$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "mjs",
+      "node",
+      "json"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,mjs}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/test/**"
+    ]
   }
 }
