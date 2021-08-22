@@ -38,6 +38,9 @@
     "transform": {
       "\\.(mjs|js)$": "babel-jest"
     },
+    "testMatch": [
+      "**/test/**/*.test.{mjs,js}"
+    ],
     "moduleFileExtensions": [
       "js",
       "cjs",

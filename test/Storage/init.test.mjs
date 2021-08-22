@@ -1,6 +1,6 @@
 import fs from 'fs';
 import Storage from '../../src/data/Storage.mjs';
-import SampleStorageData from '../SampleStorageData';
+import SampleStorageData from '../SampleStorageData.mjs';
 
 it('Storage/init/notExists', () => {
   jest.spyOn(fs, 'existsSync').mockReturnValueOnce(false);
