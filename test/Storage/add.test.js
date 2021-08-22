@@ -1,4 +1,4 @@
-import Storage from '../../src/data/Storage';
+import Storage from '../../src/data/Storage.mjs';
 
 it('Storage/add/1/+', () => {
   const s = new Storage();

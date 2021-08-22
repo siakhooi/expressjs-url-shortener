@@ -1,5 +1,5 @@
 import fs from 'fs';
-import Storage from '../../src/data/Storage';
+import Storage from '../../src/data/Storage.mjs';
 import SampleStorageData from '../SampleStorageData';
 
 it('Storage/init/notExists', () => {

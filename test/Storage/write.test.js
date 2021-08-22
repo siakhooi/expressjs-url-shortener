@@ -1,5 +1,5 @@
 import fs from 'fs';
-import Storage from '../../src/data/Storage';
+import Storage from '../../src/data/Storage.mjs';
 
 it('Storage/write/notExists', () => {
   fs.existsSync = jest.fn().mockReturnValueOnce(false);
