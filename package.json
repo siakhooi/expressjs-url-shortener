@@ -36,10 +36,10 @@
   },
   "jest": {
     "transform": {
-      "\\.(mjs|js)$": "babel-jest"
+      "\\.mjs$": "babel-jest"
     },
     "testMatch": [
-      "**/test/**/*.test.{mjs,js}"
+      "**/*.test.mjs"
     ],
     "moduleFileExtensions": [
       "js",

@@ -10,6 +10,7 @@
 ## Location
 
 - <https://github.com/siakhooi/expressjs-url-shortener>
+- <https://coveralls.io/github/siakhooi/expressjs-url-shortener>
 
 ## Status
 
