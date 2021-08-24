@@ -1,4 +1,4 @@
-name: test (non-master branch)
+name: Test (non-master branch)
 on:
   push:
     branches:

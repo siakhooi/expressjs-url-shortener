@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "node ./app.mjs",
-    "test": "jest --coverage --verbose",
+    "test": "jest --coverage --verbose --no-cache",
     "eslint": "npx eslint --format table .",
-    "test-single": "jest --collectCoverage=false -t 'Storage/init/*'"
+    "test-single": "jest --collectCoverage=false -t 'Storage/init/*'",
+    "jest-clearCache": "jest --clearCache"
   },
   "repository": {
     "type": "git",
@@ -27,16 +28,15 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.15.0",
-    "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.1",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "jest-esm-transformer": "^1.0.0"
   },
   "jest": {
     "transform": {
-      "\\.mjs$": "babel-jest"
+      "\\.m?jsx?$": "jest-esm-transformer"
     },
     "testMatch": [
       "**/*.test.mjs"
