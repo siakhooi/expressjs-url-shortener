@@ -1,15 +1,14 @@
 import express from 'express';
-import Storage from './src/data/Storage.js';
-import cutURL from './src/cutURL.js';
-import redirect from './src/redirect.js';
+import Storage from './src/data/Storage.mjs';
+import cutURL from './src/cutURL.mjs';
+import redirect from './src/redirect.mjs';
 
 const app = express();
 const port = 8080;
 
-if (Storage.data.links === undefined) {
-  Storage.data.links = [];
-  Storage.write();
-}
+app.locals.Storage = new Storage();
+app.locals.Storage.init();
+
 app.use(express.json());
 app.post('/cut', cutURL);
 

@@ -1,0 +1,17 @@
+name: Test with ESLint
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm install
+      - run: npx eslint --ext .mjs --ext .js ./

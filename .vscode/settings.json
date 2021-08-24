@@ -1,0 +1,5 @@
+{
+  "javascript.format.insertSpaceAfterConstructor": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "files.eol": "\n"
+}

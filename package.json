@@ -1,27 +1,29 @@
 {
-  "name": "expressjs-url-shortener-api",
+  "name": "expressjs-url-shortener",
   "description": "URL shortener API using ExpressJS",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "main": "app.js",
   "scripts": {
-    "serve": "node app.js"
+    "start": "node ./app.mjs",
+    "test": "jest --coverage --verbose --no-cache",
+    "eslint": "npx eslint --format table .",
+    "test-single": "jest --collectCoverage=false -t 'Storage/init/*'",
+    "jest-clearCache": "jest --clearCache"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siakhooi/expressjs-url-shortener-api.git"
+    "url": "git+https://github.com/siakhooi/expressjs-url-shortener.git"
   },
   "keywords": [
-    "url",
-    "shortener",
+    "url shortener",
     "api"
   ],
   "author": "Siak Hooi Ng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/siakhooi/expressjs-url-shortener-api/issues"
+    "url": "https://github.com/siakhooi/expressjs-url-shortener/issues"
   },
-  "homepage": "https://github.com/siakhooi/expressjs-url-shortener-api#readme",
+  "homepage": "https://github.com/siakhooi/expressjs-url-shortener#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
@@ -29,6 +31,28 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.1",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "jest-esm-transformer": "^1.0.0"
+  },
+  "jest": {
+    "transform": {
+      "\\.m?jsx?$": "jest-esm-transformer"
+    },
+    "testMatch": [
+      "**/*.test.mjs"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "cjs",
+      "mjs",
+      "node",
+      "json"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,mjs}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/test/**"
+    ]
   }
 }

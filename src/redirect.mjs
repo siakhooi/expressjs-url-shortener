@@ -1,12 +1,11 @@
-import Storage from './data/Storage.js';
-
 const redirect = (req, res) => {
   const code = req.url.replace(/\//, '');
   let found = false;
 
-  Storage.data.links.forEach((linkObject) => {
+  req.app.locals.Storage.links.forEach((linkObject) => {
     if (linkObject.code === code) {
       found = true;
+      console.log('redirect /%s to %s', code, linkObject.url);
       res.redirect(linkObject.url);
     }
   });
