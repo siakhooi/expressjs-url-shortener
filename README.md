@@ -23,7 +23,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/siakhooi/expressjs-url-shortener)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/siakhooi/expressjs-url-shortener)  
 ![test](https://github.com/siakhooi/expressjs-url-shortener/actions/workflows/test-eslint.yml/badge.svg)
-![test](https://github.com/siakhooi/expressjs-url-shortener/actions/workflows/test-jest.yml/badge.svg)
+![test](https://github.com/siakhooi/expressjs-url-shortener/actions/workflows/test-master.yml/badge.svg)
 ![test](https://github.com/siakhooi/expressjs-url-shortener/actions/workflows/test-coveralls.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/siakhooi/expressjs-url-shortener/badge.svg?branch=master)](https://coveralls.io/github/siakhooi/expressjs-url-shortener?branch=master)
 ![Coveralls](https://img.shields.io/coveralls/github/siakhooi/expressjs-url-shortener)  
