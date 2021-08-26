@@ -14,5 +14,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'import/extensions': ['off', 'ignorePackages'],
+    'no-plusplus': 'off',
   },
 };
