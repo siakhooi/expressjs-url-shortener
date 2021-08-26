@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./app.mjs",
     "test": "jest --coverage --verbose --no-cache",
-    "eslint": "npx eslint --format table .",
+    "eslint": "npx eslint --format table  --ext .mjs --ext .js ./",
     "test-single": "jest --collectCoverage=false -t 'redirect/*'",
     "jest-clearCache": "jest --clearCache"
   },

@@ -7,7 +7,6 @@ it('Storage/get/1/+', () => {
   expect(s.get('adfsf')).toBe('https://www.malaysia.com');
 });
 
-
 it('Storage/get/1/-', () => {
   const s = new Storage();
   s.add('https://www.malaysia.com', 'adfsf');
