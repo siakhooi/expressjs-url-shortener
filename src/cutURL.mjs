@@ -5,12 +5,12 @@ const cutURL = (req, res) => {
   if (req.body.url === undefined || !URLTester.isValid(req.body.url)) {
     return res.status(400).send('Bad request');
   }
-
   const code = ShortCode.generate();
 
   console.log('cutURL /%s from %s', code, req.body.url);
 
   req.app.locals.Storage.add(req.body.url, code);
+
   req.app.locals.Storage.write();
 
   return res.status(200).send({

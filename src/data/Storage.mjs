@@ -26,6 +26,13 @@ class Storage {
       code,
     });
   }
+
+  get(code) {
+    for (let i = 0; i < this.links.length; i++) {
+      if (this.links[i].code === code) return this.links[i].url;
+    }
+    return null;
+  }
 }
 
 export default Storage;

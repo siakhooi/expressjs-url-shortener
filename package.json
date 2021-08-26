@@ -7,7 +7,7 @@
     "start": "node ./app.mjs",
     "test": "jest --coverage --verbose --no-cache",
     "eslint": "npx eslint --format table .",
-    "test-single": "jest --collectCoverage=false -t 'Storage/init/*'",
+    "test-single": "jest --collectCoverage=false -t 'redirect/*'",
     "jest-clearCache": "jest --clearCache"
   },
   "repository": {

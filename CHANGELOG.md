@@ -7,3 +7,4 @@
 - **Refactor**
   - `#9`: As dev, i want to refactor data into app context.
   - `#3`: As dev, I want to refactor `cutURL.mjs` and test with jest.
+  - `#11`: As dev, I want to refactor `redirect.mjs` and test with jest.
