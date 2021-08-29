@@ -7,6 +7,7 @@
 - <https://dev.to/agorushkin/url-shortener-api-with-express-in-5-minutes-2ehp>
 - <https://github.com/airbnb/javascript>
 - <https://github.com/ActuallyACat/jest-esm-transformer>
+- <https://www.npmjs.com/package/supertest>
 
 ## Location
 

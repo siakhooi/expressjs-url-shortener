@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "node ./app.mjs",
+    "start": "node ./server.mjs",
     "test": "jest --coverage --verbose --no-cache",
     "eslint": "npx eslint --format table  --ext .mjs --ext .js ./",
-    "test-single": "jest --collectCoverage=false -t 'redirect/*'",
+    "test-single": "jest --collectCoverage=false -t 'app/cutURL/*'",
     "jest-clearCache": "jest --clearCache"
   },
   "repository": {
@@ -32,7 +32,8 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.1",
     "jest": "^27.0.6",
-    "jest-esm-transformer": "^1.0.0"
+    "jest-esm-transformer": "^1.0.0",
+    "supertest": "^6.1.6"
   },
   "jest": {
     "transform": {
